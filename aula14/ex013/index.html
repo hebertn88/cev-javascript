@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Contar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div>
+            <label for="iInicio">Início: </label>
+            <input type="number" name="iInicio" id="iInicio" min="0" required>
+            <br><br>
+            <label for="iFim">Fim: </label>
+            <input type="number" name="iFim" id="iFim" required>
+            <br><br>
+            <label for="iPasso">Passo: </label>
+            <input type="number" name="iPasso" id="iPasso" min="1" value="1" required>
+            <br><br>
+            <input type="submit" name="iContar" id="iContar" value="Contar">
+        </div>
+        <div id="dResp">
+        </div>
+
+    </section>
+    <footer>
+        <p><strong>Hebert</strong> | Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

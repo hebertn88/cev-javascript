@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="txtvel">Velocidade: </label>
+    <input type="number" id="txtvel" name="txtvel">
+    <input type="button" id="verificar" value="Verificar">
+    <div id="msg" name="msg"></div>
+    <script>
+        var verif = window.document.querySelector('input#verificar')
+        verif.addEventListener('click', verificar)
+
+        function verificar() {
+            var txtvel = window.document.querySelector('input#txtvel')
+            var msg = window.document.querySelector('div#msg')
+            if (Number(txtvel.value) > 60) {
+                console.log('teste')
+                msg.innerHTML = '<p>Você está <strong>ACIMA</strong> da velocidade, por isso será Multado</p>'
+            } else {
+                msg.innerHTML = '<p>Parabéns, continue dirigindo com responsabilidade.</p>'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Que horas são?</button>
+    <div id="msg"></div>
+
+    <script>
+        var btn = window.document.querySelector('button#btn')
+        btn.addEventListener('click', apertou)
+
+        function apertou() {
+            var msg = window.document.querySelector('div#msg')
+            var h = new Date()
+            var hora = h.getHours() 
+
+            if (hora >= 19) {
+                msg.innerHTML = `Boa noite, já são ${hora}h.` 
+            } else if (hora > 12 && hora < 19) {
+                msg.innerHTML = `Boa tarde, já são ${hora}h.`
+            } else if (hora > 0 && hora < 12) {
+                msg.innerHTML = `Bom dia, ainda são ${hora}h.`
+            }
+            
+            switch(hora) {
+                case 0:
+                    msg.innerHTML = 'Meia noite, já passou da hora de dormir!'
+                    break
+                case 12:
+                    msg.innerHTML = 'Olá, agora é meio dia!'
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()">
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('mouseout', sair)
+
+        var a2 = window.document.querySelector('div#area')
+        a2.addEventListener('mouseenter', entrar)
+
+        function clicar() {
+            a.innerText = 'CLICKOU!!'
+            a.style.backgroundColor = 'red'
+
+        }
+
+        function entrar() {
+            a2.innerText = 'Entrou'
+            a2.style.backgroundColor = 'orange'
+        }
+
+        function sair() {
+            a.style.backgroundColor = 'green'
+            a.innerText = 'Interaja...'
+        }
+    </script>
+</body>
+</html>

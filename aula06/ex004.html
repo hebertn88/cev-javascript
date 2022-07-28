@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+ 
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        document.write(`<h1>seu nome, ${nome.toUpperCase()},  tem ${nome.length} letras</h1>`)
+
+        var n1 = 10.532
+        n1.toFixed(2)
+        n1.toFixed(2).replace('.',',')
+        n1 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        window.alert(n1)
+    </script>
+</body>
+</html>
