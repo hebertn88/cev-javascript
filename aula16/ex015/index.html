@@ -14,14 +14,14 @@
     <section>
         <div>
             <label for="iNum">Número(Entre 1 a 100): </label>
-            <input type="number" name="iNum" id="iNum" min="1" max="100" required>
+            <input type="number" name="iNum" id="iNum" min="1" max="100" step="1" required>
             <input type="button" name="btnAd" id="btnAd" value="Adicionar">
             <br>
             <select name="listNum" id="listNum" size="10" hidden>
             </select>
             <br>
-            <input type="button" name="btnFin" id="btnFin" value="Finalizar">
-            <input type="button" name="btnRein" id="btnRein" value="Reiniciar">
+            <input type="button" name="btnFin" id="btnFin" value="Finalizar" disabled>
+            <input type="button" name="btnRein" id="btnRein" value="Reiniciar" disabled>
 
         </div>
         <div id="dResp">
