@@ -17,6 +17,7 @@ function toBRL(v) {
         return v.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
     }
 }
+
 function inicia() {
     let nome = ''
     while (!nome.length > 0) {
